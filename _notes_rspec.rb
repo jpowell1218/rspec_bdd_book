@@ -16,3 +16,23 @@ TM_SVN_DIFF_CMD     /usr/local/bin/ksdiff-svnwrapper
 # /Users/jpowell/.rvm/gems/ree-1.8.7-2010.02/gems/rspec-2.0.0
 
 Run just the rspec tests via: rspec spec
+
+Running notes:  12.24.2010 - initial /spec setup
+
+(describing_code_with_rspec)⚡ % rspec spec/codebreaker/game_spec.rb --format doc 
+
+Codebreaker::Game
+  #start
+    sends a welcome message (PENDING: Not Yet Implemented)
+    prompts for the first guess (PENDING: Not Yet Implemented)
+
+Pending:
+  Codebreaker::Game#start sends a welcome message
+    # Not Yet Implemented
+    # ./spec/codebreaker/game_spec.rb:6
+  Codebreaker::Game#start prompts for the first guess
+    # Not Yet Implemented
+    # ./spec/codebreaker/game_spec.rb:7
+
+Finished in 0.00035 seconds
+2 examples, 0 failures, 2 pending
