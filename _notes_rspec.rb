@@ -15,4 +15,4 @@ TM_SVN_DIFF_CMD     /usr/local/bin/ksdiff-svnwrapper
 # /Users/jpowell/.rvm/gems/ree-1.8.7-2010.02/gems/rspec-1.3.0 
 # /Users/jpowell/.rvm/gems/ree-1.8.7-2010.02/gems/rspec-2.0.0
 
-Run just the rspec tests via: rspec spec  
+Run just the rspec tests via: rspec spec
