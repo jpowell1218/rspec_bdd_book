@@ -26,6 +26,13 @@
 # Configure Textmate RSpec bundle:    
 http://rspec.info/documentation/tools/extensions/editors/textmate.html
 
+Textmate Shortcuts:
+  des   <tab>   describe
+  it    <tab>   it
+  bef   <tab>   before
+  aft   <tab>   after
+  
+  
 Use Cucumber to describe the behavior of applications and use RSpec to describe the behavior of objects
 
 Current TextMate Variables:
@@ -40,11 +47,17 @@ TM_SVN_DIFF_CMD     /usr/local/bin/ksdiff-svnwrapper
 # /Users/jpowell/.rvm/gems/ree-1.8.7-2010.02/gems/rspec-1.3.0 
 # /Users/jpowell/.rvm/gems/ree-1.8.7-2010.02/gems/rspec-2.0.0
 
-Run just the rspec tests via: rspec spec --color --format doc (now aliased to rspecc)
+Run just the rspec tests via: 
+
+    rspec spec --color --format doc         (now aliased to rspecc)
+    rspec spec --color --format specdoc
 
 Running notes:  12.24.2010 - initial /spec setup
 
 % rspec spec/codebreaker/game_spec.rb --format doc 
 
 RSpec Note: follow the guideline of "one expectation per example" -ie- output.should_receive(:puts).with('Welcome to Codebreaker!')
+
+# decribe returns a subclass of RSpec::Core::ExampleGroup (a group of examples of expected behavior of an object - similar to Test::Unit's TestCase)
+# it() method creates an example that is an instance of the ExampleGroup returned by describe()
 

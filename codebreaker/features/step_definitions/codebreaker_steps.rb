@@ -22,7 +22,7 @@ end
 
 When /^I start a new game$/ do
   game = Codebreaker::Game.new(output)
-  game.start('1234')
+  game.start('1234');
 end
 
 When /^I guess "([^"]*)"$/ do |guess|
@@ -36,5 +36,6 @@ end
 Then /^the mark should be "([^"]*)"$/ do |mark|
   output.messages.should include(mark)
 end
+
 
 
