@@ -51,6 +51,7 @@ Run just the rspec tests via:
 
     rspec spec --color --format doc         (now aliased to rspecc)
     rspec spec --color --format specdoc
+    rspec spec --backtrace
 
 Running notes:  12.24.2010 - initial /spec setup
 
